@@ -34,11 +34,6 @@ Generative AI uses real energy and resources every time it runs. A lot of simple
 
 🚧 Work in progress — student project, currently in development.
 
-## Team
-
-- **[Name]** — Extension development
-- **[Name]** — Classifier / Machine Learning
-- **[Name]** — Data, research & documentation
 
 ## Project documents
 
