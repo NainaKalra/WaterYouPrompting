@@ -34,7 +34,10 @@ Generative AI uses real energy and resources every time it runs. A lot of simple
 
 🚧 Work in progress — student project, currently in development.
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> exported model from google colab
 ## Project documents
 
 - `requirements.md` — what the project needs to do
