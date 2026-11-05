@@ -796,3 +796,15 @@ test_questions_hard = [
 train_set = set(q.strip().lower() for q in clean_q)
 overlap = [q for q in test_questions if q.strip().lower() in train_set]
 print("already in training set:", overlap)
+
+#to create model_coefficients.json file -
+import json 
+model_data = {
+    "coefficients": model.coef_.tolist(),
+    "intercept": model.intercept_.tolist(),
+    "classes": model.classes_.tolist()
+}
+with open('model_coefficients.json', 'w') as f:
+    json.dump(model_data, f)
+
+print("model_coefficients.json file created")
