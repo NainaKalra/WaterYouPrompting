@@ -13,7 +13,7 @@ The goal is **not to block AI**. It's to make people pause for a second and ask:
 
 ## Why we built this
 
-Generative AI uses real energy and resources every time it runs. A lot of simple questions people ask AI could just as easily be answered with a normal search engine. This extension nudges users toward the right tool for the right question — without taking away their choice.
+Generative AI uses real energy and resources every time it runs, including precious drinking water. A lot of simple questions people ask AI could just as easily be answered with a normal search engine. This extension nudges users toward the right tool for the right question — so they make conscious decisions. 
 
 ## How it works
 
@@ -32,16 +32,14 @@ Generative AI uses real energy and resources every time it runs. A lot of simple
 
 ## Project status
 
-🚧 Work in progress — student project, currently in development.
+Work in progress — student project, currently in development.
 
-<<<<<<< HEAD
-
-=======
->>>>>>> exported model from google colab
 ## Project documents
 
 - `requirements.md` — what the project needs to do
 - `Risk.md` — known risks and how we're handling them
+- 'vectorizer.json' - turns text into numbers
+- 'model_coefficients.json' - turns numbers into EASY or HARD 
 
 ## Disclaimer
 

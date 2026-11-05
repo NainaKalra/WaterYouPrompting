@@ -279,7 +279,7 @@ easy_questions = [
     "name the capital of Germany",
     "define an algorithm",
     "give me one example of renewable energy",
-    "name the closest star to Earth"
+    "name the closest star to Earth",
 
     #long easy questions
     # ==================== SCIENCE ====================
@@ -805,6 +805,21 @@ model_data = {
     "classes": model.classes_.tolist()
 }
 with open('model_coefficients.json', 'w') as f:
-    json.dump(model_data, f)
+    json.dump(model_data, f, indent=2)
 
 print("model_coefficients.json file created")
+
+#to create vectorizer.json file -
+vectorizer_data = {
+    "vocabulary": {term: int(idx) for term, idx in vectorizer.vocabulary_.items()},
+    "idf": [float(x) for x in vectorizer.idf_],
+    "ngram_range": list(vectorizer.ngram_range),
+    "lowercase": vectorizer.lowercase,
+    "token_pattern": vectorizer.token_pattern,
+    "norm": vectorizer.norm,
+    "sublinear_tf": vectorizer.sublinear_tf,
+}
+with open("vectorizer.json", "w") as f:
+    json.dump(vectorizer_data, f, indent=2)
+
+print("vectorizer.json file created")
