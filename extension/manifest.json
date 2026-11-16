@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "WaterYouPrompting",
+  "version": "1.0",
+  "description": "Asks you to search the web when a prompt doesn't need AI, thereby saving tokens and water.",
+  "permissions": ["storage"],
+  //will add icons
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [{
+    "matches": [
+      "https://chatgpt.com/*",
+      "https://chat.openai.com/*",
+      "https://claude.ai/*",
+      "https://gemini.google.com/*"
+    ],
+    "js": ["classifier.js", "content.js"],
+    "css": ["style.css"],
+    "run_at": "document_idle"
+  }],
+  "web_accessible_resources": [{
+    "resources": ["vectorizer.json", "model_coefficients.json","labels.json"],
+    "matches": [
+      "https://chatgpt.com/*",
+      "https://chat.openai.com/*",
+      "https://claude.ai/*",
+      "https://gemini.google.com/*"
+    ]
+  }]
+}
