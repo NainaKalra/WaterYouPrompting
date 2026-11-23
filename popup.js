@@ -5,6 +5,6 @@ async function sayHello() {
         function: () => {
             alert('Hello, extension!');
         }
-        });
+    });
 }
 document.getElementById('myButton').addEventListener('click', sayHello);
